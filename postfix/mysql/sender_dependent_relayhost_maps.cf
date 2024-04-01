@@ -1,0 +1,6 @@
+hosts       = 127.0.0.1:3306
+user        = vmail
+password    = 0OAYENZRD7Rw5figbQDmwfvWtSmGAaYe
+dbname      = vmail
+# '%s' will be replaced by the envelope sender address or @domain.
+query       = SELECT relayhost FROM sender_relayhost WHERE account='%s' LIMIT 1
